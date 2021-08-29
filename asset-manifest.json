@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/react-redux-shopping-app/static/js/main.cbeb492c.chunk.js",
-    "main.js.map": "/react-redux-shopping-app/static/js/main.cbeb492c.chunk.js.map",
+    "main.js": "/react-redux-shopping-app/static/js/main.1e6e8eb1.chunk.js",
+    "main.js.map": "/react-redux-shopping-app/static/js/main.1e6e8eb1.chunk.js.map",
     "runtime-main.js": "/react-redux-shopping-app/static/js/runtime-main.17af012c.js",
     "runtime-main.js.map": "/react-redux-shopping-app/static/js/runtime-main.17af012c.js.map",
-    "static/js/2.1af8fef7.chunk.js": "/react-redux-shopping-app/static/js/2.1af8fef7.chunk.js",
-    "static/js/2.1af8fef7.chunk.js.map": "/react-redux-shopping-app/static/js/2.1af8fef7.chunk.js.map",
+    "static/js/2.02a985a6.chunk.js": "/react-redux-shopping-app/static/js/2.02a985a6.chunk.js",
+    "static/js/2.02a985a6.chunk.js.map": "/react-redux-shopping-app/static/js/2.02a985a6.chunk.js.map",
     "index.html": "/react-redux-shopping-app/index.html",
-    "static/js/2.1af8fef7.chunk.js.LICENSE.txt": "/react-redux-shopping-app/static/js/2.1af8fef7.chunk.js.LICENSE.txt"
+    "static/js/2.02a985a6.chunk.js.LICENSE.txt": "/react-redux-shopping-app/static/js/2.02a985a6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.17af012c.js",
-    "static/js/2.1af8fef7.chunk.js",
-    "static/js/main.cbeb492c.chunk.js"
+    "static/js/2.02a985a6.chunk.js",
+    "static/js/main.1e6e8eb1.chunk.js"
   ]
 }

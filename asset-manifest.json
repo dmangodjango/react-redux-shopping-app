@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-redux-shopping-app/static/js/main.4f85c467.chunk.js",
-    "main.js.map": "/react-redux-shopping-app/static/js/main.4f85c467.chunk.js.map",
+    "main.js": "/react-redux-shopping-app/static/js/main.c1dc1f41.chunk.js",
+    "main.js.map": "/react-redux-shopping-app/static/js/main.c1dc1f41.chunk.js.map",
     "runtime-main.js": "/react-redux-shopping-app/static/js/runtime-main.17af012c.js",
     "runtime-main.js.map": "/react-redux-shopping-app/static/js/runtime-main.17af012c.js.map",
     "static/js/2.265bfbbc.chunk.js": "/react-redux-shopping-app/static/js/2.265bfbbc.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.17af012c.js",
     "static/js/2.265bfbbc.chunk.js",
-    "static/js/main.4f85c467.chunk.js"
+    "static/js/main.c1dc1f41.chunk.js"
   ]
 }

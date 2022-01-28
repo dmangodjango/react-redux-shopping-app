@@ -29,14 +29,7 @@ import {
 const ProductDetails = () => {
     const { productId } = useParams();
     const product = useSelector((state)=> state.setProductDetailsReducer);
-    console.log(product)
     const dispatch = useDispatch();
-
-    // const getProductDetails = async () => {
-    //     const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
-    //         .catch((error)=> console.log(error));
-    //     dispatch(setProductDetails(response.data));
-    // }
 
     useEffect(() => {
         if(productId && productId !== "") dispatch(getProductDetails(productId));

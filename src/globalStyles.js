@@ -54,6 +54,7 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: ${({fullheight}) => (fullheight? "100%" : "auto")};
 
   &::after{
     content: "";
@@ -64,8 +65,8 @@ export const Row = styled.div`
 
 export const Column = styled.div`
   float: left;
-  padding: 0 10px;
-  margin-bottom: 20px;
+  padding: ${({ nopadding }) => (nopadding ? '0' : '0 10px')} ;
+  margin-bottom: ${({ nomargin }) => (nomargin? "0" : "20px")};
   width: 100%;
 
   @media screen and (min-width: 768px) {
@@ -135,6 +136,19 @@ export const PageTitle = styled.h1`
 `;
 
 
+export const InputText = styled.input.attrs({ type: "text" })`
+    padding: 10px;
+    width: 100%;
+    border: var(--color-light-grey) 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    &:focus {
+      border: var(--color-dark) 2px solid !important;
+    }
+`;
+
+
 export const Button = styled.button`
   border-radius: 4px;
   background: var(--color-dark);
@@ -145,6 +159,7 @@ export const Button = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
+  width: ${({fullwidth}) => (fullwidth? "100%": "auto")};
 
   &:hover {
     transition: all 0.3s ease-out;

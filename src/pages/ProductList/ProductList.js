@@ -25,11 +25,6 @@ const ProductList = () => {
     })
 
     const dispatch = useDispatch();
-    // const getProducts = async() => {
-    //     const response = await axios.get("https://fakestoreapi.com/products").catch((error)=> console.log(error));
-    //     dispatch(setProducts(response.data));
-    // }
-
     useEffect(()=> {
         dispatch(getProducts());
     }, []);

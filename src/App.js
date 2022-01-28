@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter,BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from './components/Footer/Footer';
+import ModalCollections from './components/ModalCollections';
 import Navbar from "./components/Navbar/Navbar";
 import ScrollToTop from './components/ScrollToTop';
 import GlobalStyle, { MainContainer } from "./globalStyles";
@@ -15,14 +16,16 @@ function App() {
         <GlobalStyle/>
         <ScrollToTop/>
         <Navbar/>
+        <ModalCollections />
         <Switch>
           <MainContainer>
-            <Route path="/" exact  component={ProductList}/>
+            <Route path="/" exact component={ProductList}/>
             <Route path="/product/:productId" component={ProductDetails}/>
           </MainContainer>
         </Switch>
         <Footer/>
-      </Router>    </>
+      </Router>    
+    </>
   );
 }
 

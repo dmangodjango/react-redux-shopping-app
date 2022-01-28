@@ -19,7 +19,12 @@ import {
     NavLinks,
     NavBtnLink 
     } from './Navbar.element';
+import { Link, useLocation, useRouteMatch } from 'react-router-dom';
+import usePrepareModalLink from '../ModalCollections/hooks/usePrepareModalLink';
+import { MODAL_NAME } from '../ModalCollections/constants/modalName';
+import { MODAL_TYPES } from '../ModalCollections/constants/modalTypes';
 
+    
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -41,6 +46,10 @@ const Navbar = () => {
 
     window.addEventListener('resize', showButton);
 
+    const signInLink = usePrepareModalLink({
+      [MODAL_TYPES.popup]:MODAL_NAME.signin
+    });
+
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
@@ -56,7 +65,7 @@ const Navbar = () => {
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks to='/' onClick={closeMobileMenu}>
-                  Shop
+                  Products
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -68,13 +77,13 @@ const Navbar = () => {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='#'>
-                    <Button primary>SIGN UP</Button>
+                  <NavBtnLink to={signInLink}>
+                    <Button primary>SIGN IN</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to='#'>
                     <Button onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
+                      SIGN IN
                     </Button>
                   </NavBtnLink>
                 )}
